@@ -9,11 +9,10 @@ hamburger.addEventListener('click', () => {
     else {
     hamburger.classList.toggle('active');
     navmenu.classList.toggle('active');
-    document.body.style.overflow = 'hidden';
-    }
+    document.body.style.overflow = 'hidden';}
 });
 // Hide navMenu
-  document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', ( ) => {
+  document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click',( )=> {
   hamburger.classList.remove('active');
   navmenu.classList.remove('active');
 }));

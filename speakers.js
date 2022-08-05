@@ -100,7 +100,6 @@ const speekerz = [
 
 let workCard = '';
 let workCard1 = '';
-let counter = '0'
 const appendWorks = (speekerz, startt) => {
   for (let i = startt; i < startt + 6; i += 1) {
     workCard += ` <section class="speeker-card">
@@ -120,11 +119,9 @@ const appendWorks = (speekerz, startt) => {
   // if (window.innerWidth < 768) {
 
   workCard += ' <button type="button" data-work="${i}" class="btn buttonM" onclick="appendworksR(speekerz,5);"> <p>More &nbsp;<span class="downA">V</span></p> </button> ';
-}
-
+};
 appendWorks(speekerz, 0);
 projectsC.innerHTML += workCard;
-
 const appendWorksR = (speekerz, startt) => {
   for (let i = startt; i < startt + 6; i += 1) {
     workCard1 += ` <section class="speeker-card">
@@ -136,22 +133,9 @@ const appendWorksR = (speekerz, startt) => {
     <p class="card-description">
     ${speekerz[i].description}
     </p></div> 
-  
-    </section>`;
+      </section>`;
   }
-
-
-
-  workCard1 += ' <button type="button" data-work="${i}" class="btn buttonM" onclick=" appendworksR(speekerz,${[i]});"> <p>Less &nbsp;<span class="downA">V</span></p> </button> ';
+workCard1 += ' <button type="button" data-work="${i}" class="btn buttonM" onclick=" appendworksR(speekerz,${[i]});"> <p>Less &nbsp;<span class="downA">V</span></p> </button> ';
 };
 // appendWorksR(speekerz,5);
 projectsC.innerHTML += workCard1;
-
-
-
-
-
-//  <button type="button" data-work="${i}" class="btn buttonM" onclick="appendworks(speekerz,${[i]})';">
-//     More
-//     </button>
-//     </div> 
