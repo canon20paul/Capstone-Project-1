@@ -119,6 +119,7 @@ const appendWorks = (speekerz, startt) => {
 };
 appendWorks(speekerz, 0);
 projectsC.innerHTML += workCard;
+/* eslint eqeqeq: "off", curly: "error" */
 const appendWorksR = (speekerz, startt) => {
   for (let i = startt; i < startt + 6; i += 1) {
     workCard1 += ` <section class="speeker-card">
