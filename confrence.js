@@ -10,11 +10,11 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navmenu.classList.toggle('active');
     document.body.style.overflow = 'hidden';
-  }
+   }
 });
 // Hide navMenu
 /* eslint eqeqeq: "off", curly: "error" */
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
   hamburger.classList.remove('active');
   navmenu.classList.remove('active');
 }));
