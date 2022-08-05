@@ -13,7 +13,7 @@ hamburger.addEventListener('click', () => {
   }
 });
 // Hide navMenu
-  document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', ( ) => {
+  document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click',() => {
   hamburger.classList.remove('active');
   navmenu.classList.remove('active');
 }));

@@ -115,7 +115,7 @@ const appendWorks = (speekerz, startt) => {
     </section>`;
   }
   // if (window.innerWidth < 768) {
-  workCard += ' <button type="button" data-work="${i}" class="btn buttonM" onclick="appendworksR(speekerz,5);"> <p>More &nbsp;<span class="downA">V</span></p> </button> ';
+  workCard += ' <button type="button"  class="btn buttonM" onclick="appendworksR(speekerz,5);"> <p>More &nbsp;<span class="downA">V</span></p> </button> ';
 };
 appendWorks(speekerz, 0);
 projectsC.innerHTML += workCard;
@@ -132,6 +132,6 @@ const appendWorksR = (speekerz, startt) => {
     </p></div> 
       </section>`;
   }
-  workCard1 += ' <button type="button" data-work="${i}" class="btn buttonM" onclick=" appendworksR(speekerz,${[i]});"> <p>Less &nbsp;<span class="downA">V</span></p> </button> ';
+  workCard1 += ' <button type="button"  class="btn buttonM" onclick=" appendworksR(speekerz,${[i]});"> <p>Less &nbsp;<span class="downA">V</span></p> </button> ';
 };
   projectsC.innerHTML += workCard1;
