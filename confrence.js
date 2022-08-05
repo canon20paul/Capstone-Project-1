@@ -13,7 +13,8 @@ else {
   }
 });
 // Hide navMenu
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click',( ) => {
+/* eslint eqeqeq: "off", curly: "error" */
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
   hamburger.classList.remove('active');
   navmenu.classList.remove('active');
 }));
