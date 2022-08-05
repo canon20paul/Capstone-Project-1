@@ -10,7 +10,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navmenu.classList.toggle('active');
     document.body.style.overflow = 'hidden';
-   }
+  }
 });
 // Hide navMenu
 /* eslint eqeqeq: "off", curly: "error" */
