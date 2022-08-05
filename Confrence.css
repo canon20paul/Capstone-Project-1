@@ -258,10 +258,12 @@ hr {
   width: 100%;
 }
 
-.buttonm {
-  width: 90%;
-  opacity: 0;
-  color: transparent;
+.buttonM {
+  display: none;
+}
+
+.buttonM p {
+  display: none;
 }
 
 .partners-sect {
@@ -524,7 +526,12 @@ a {
     display: none;
   }
 
+  .buttonM {
+    display: block;
+  }
+
   .buttonM p {
+    display: block;
     width: 99%;
     margin: auto;
     font-size: 1.1rem;

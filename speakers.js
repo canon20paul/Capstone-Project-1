@@ -99,8 +99,10 @@ const speekerz = [
   ];
 
   let workCard = '';
+  let workCard1 = '';
+  let counter='0'
 const appendWorks = (speekerz,startt) => {
-  for (let i = startt; i < 12; i += 1) {
+  for (let i = startt; i <startt + 6; i += 1) {
     workCard += ` <section class="speeker-card">
     <img class="spk-img" src="${speekerz[i].image}" alt="${speekerz[i].names}" />
     <div class="infor"><h3 class="namez">${speekerz[i].names}</h3>
@@ -112,12 +114,39 @@ const appendWorks = (speekerz,startt) => {
     </p></div> 
   
     </section>`;
+    counter +=1;
   }
+
+  // if (window.innerWidth < 768) {
   
-  workCard += ' <button type="button" data-work="${i}" class="btn buttonM" onclick=" appendworks(speekerz,${[i]});"> <p>More &nbsp;<span class="downA">V</span></p> </button> ';
-};
+  workCard += ' <button type="button" data-work="${i}" class="btn buttonM" onclick="appendworksR(speekerz,5);"> <p>More &nbsp;<span class="downA">V</span></p> </button> ';
+  }
+
 appendWorks(speekerz,0);
-projectsC.innerHTML = workCard;
+projectsC.innerHTML += workCard;
+
+const appendWorksR = (speekerz,startt) => {
+  for (let i = startt; i < startt+6; i += 1) {
+    workCard1 += ` <section class="speeker-card">
+    <img class="spk-img" src="${speekerz[i].image}" alt="${speekerz[i].names}" />
+    <div class="infor"><h3 class="namez">${speekerz[i].names}</h3>
+    <p class="card-co">
+    ${speekerz[i].company}
+    </p>
+    <p class="card-description">
+    ${speekerz[i].description}
+    </p></div> 
+  
+    </section>`;
+  }
+
+
+  
+  workCard1 += ' <button type="button" data-work="${i}" class="btn buttonM" onclick=" appendworksR(speekerz,${[i]});"> <p>Less &nbsp;<span class="downA">V</span></p> </button> ';
+};
+// appendWorksR(speekerz,5);
+projectsC.innerHTML += workCard1;
+
 
 
 
