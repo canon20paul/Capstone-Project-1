@@ -153,7 +153,7 @@ a {
 }
 
 .nav-bar1 a {
-  padding-right: 20px;
+  padding-right: 15px;
   text-decoration: none;
   color: #f4f4f4;
 }
@@ -183,7 +183,7 @@ a {
   color: #ec5242;
   border: #ec5242 solid 3px;
   width: 12em;
-  padding-right: 1em 0;
+  padding-right: 0.5em 0;
 }
 
 .logo {
@@ -467,8 +467,8 @@ footer {
 
   .hamburger {
     display: block;
-    position: fixed;
-    margin-top: 15em;
+    position: relative;
+    margin-top: 14em;
     margin-left: -8em;
   }
 
@@ -729,3 +729,11 @@ footer {
     color: #fff;
   }
 }
+
+/* a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #fff;
+} */

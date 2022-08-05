@@ -562,8 +562,8 @@ a {
 
   .hamburger {
     display: block;
-    position: fixed;
-    margin-top: 15em;
+    position: relative;
+    margin-top: 14em;
     margin-left: -8em;
   }
 
