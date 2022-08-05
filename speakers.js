@@ -132,7 +132,6 @@ const appendWorksR = (speekerz, startt) => {
     </p></div> 
       </section>`;
   }
-workCard1 += ' <button type="button" data-work="${i}" class="btn buttonM" onclick=" appendworksR(speekerz,${[i]});"> <p>Less &nbsp;<span class="downA">V</span></p> </button> ';
+  workCard1 += ' <button type="button" data-work="${i}" class="btn buttonM" onclick=" appendworksR(speekerz,${[i]});"> <p>Less &nbsp;<span class="downA">V</span></p> </button> ';
 };
-// appendWorksR(speekerz,5);
-projectsC.innerHTML += workCard1;
+  projectsC.innerHTML += workCard1;
