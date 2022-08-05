@@ -100,7 +100,7 @@ const speekerz = [
 
   let workCard = '';
 const appendWorks = (speekerz,startt) => {
-  for (let i = startt; i < 4; i += 1) {
+  for (let i = startt; i < 12; i += 1) {
     workCard += ` <section class="speeker-card">
     <img class="spk-img" src="${speekerz[i].image}" alt="${speekerz[i].names}" />
     <div class="infor"><h3 class="namez">${speekerz[i].names}</h3>
@@ -114,7 +114,7 @@ const appendWorks = (speekerz,startt) => {
     </section>`;
   }
   
-  workCard += ' <button type="button" data-work="${i}" class="btn buttonM" onclick=" appendworks(speekerz,${[i]});"> More </button> ';
+  workCard += ' <button type="button" data-work="${i}" class="btn buttonM" onclick=" appendworks(speekerz,${[i]});"> <p>More &nbsp;<span class="downA">V</span></p> </button> ';
 };
 appendWorks(speekerz,0);
 projectsC.innerHTML = workCard;

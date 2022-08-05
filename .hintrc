@@ -9,6 +9,14 @@
         "list": "off"
       }
     ],
-    "axe/name-role-value": "off"
+    "axe/name-role-value": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "link[referrerpolicy]"
+        ]
+      }
+    ]
   }
 }
