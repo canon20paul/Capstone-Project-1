@@ -1,5 +1,18 @@
 {
     "liveServer.settings.port": 5504,
+    // "editor.fontFamily": "Roboto, Lato, 'Source Code Pro Semibold for Powerline', 'Source Code Pro for Powerline', Menlo, Monaco, 'Courier New', monospace",
     "workbench.settings.editor": "json",
-    "editor.fontFamily": "Roboto, Lato, 'Source Code Pro Semibold for Powerline', 'Source Code Pro for Powerline', Menlo, Monaco, 'Courier New', monospace"
+    
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+    "editor.fontFamily": " Roboto, Cocogoose, Lato",
+    "editor.fontLigatures": true
+}
+
+{
+    "editor.fontFamily": " Roboto, Cocogoose, Lato",
+    "editor.fontLigatures": true
 }

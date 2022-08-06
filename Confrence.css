@@ -53,24 +53,6 @@ body {
   height: auto;
 }
 
-/* .header-icons {
-  position: fixed;
-  display: inline;
-  width: 100%;
-}
-
-.header-icon img {
-  width: 40px;
-  height: 35px;
-  color: #868484;
-}
-
-.header-icon  {
-  z-index: 3;
-  float: right;
-  color: #868484;
-} */
-
 .desc {
   width: 34%;
   color: #828484;
@@ -149,8 +131,14 @@ body {
 }
 
 hr {
-  width: 7%;
-  border: #ec5242 solid 1px;
+  width: 2em;
+  border: #ec5242 solid 5px;
+}
+
+.hrp {
+  width: 30px;
+  border: #5c5757 solid 1px;
+  margin-top: -0.5em;
 }
 
 .program-card {
@@ -234,6 +222,7 @@ hr {
 
 .spk-img {
   width: 30%;
+  box-shadow: -20px -20px grey;
 }
 
 .infor {
@@ -251,7 +240,6 @@ hr {
   width: 100%;
   color: rgb(243, 2, 62);
   font-style: italic;
-  padding-bottom: 1em;
 }
 
 .card-description {
@@ -266,6 +254,14 @@ hr {
   display: none;
 }
 
+.buttonL {
+  display: none;
+}
+
+.buttonL p {
+  display: none;
+}
+
 .partners-sect {
   width: 100%;
   margin-top: 2em;
@@ -274,7 +270,7 @@ hr {
 }
 
 .partners img {
-  max-width: 40%;
+  max-width: 20%;
 }
 
 .partner-header {
@@ -528,6 +524,8 @@ a {
 
   .buttonM {
     display: block;
+    width: 100%;
+    margin: auto;
   }
 
   .buttonM p {
@@ -538,6 +536,30 @@ a {
     font-weight: 500;
     border: #474343 solid 4px;
     padding: 0.5em 5em;
+  }
+
+  .buttonL {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  .buttonL p {
+    display: block;
+    width: 99%;
+    margin: auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: #474343 solid 4px;
+    padding: 0.5em 5em;
+  }
+
+  .hide {
+    opacity: 0;
+  }
+
+  .unhide {
+    opacity: 1;
   }
 
   .downA {
@@ -622,7 +644,7 @@ a {
     padding-left: 20px;
     padding-bottom: 0.5em;
     width: 95%;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.8rem;
     font-weight: 500;
     word-spacing: 0;
@@ -762,7 +784,7 @@ a {
   .speaker-header {
     width: 95%;
     text-align: center;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: ' ourier New', Courier, monospace, cocogoose;
     font-size: 1.5rem;
     font-weight: 550;
     color: #111;
@@ -799,6 +821,7 @@ a {
 
   .spk-img {
     width: 30%;
+    box-shadow: -20px -20px grey;
   }
 
   .infor {

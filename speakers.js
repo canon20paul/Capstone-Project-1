@@ -1,5 +1,7 @@
 const projectsC = document.querySelector('.speakers');
 const projectsM = document.querySelector('.more');
+const LoadB = document.querySelector('.buttonM');
+const LoadD = document.querySelector('.buttonL');
 const speekerz = [
   {
     id: 'speaker1',
@@ -98,7 +100,6 @@ const speekerz = [
       "Lorem Ipsum is simply dummy company of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy company ever since the 1500s.",
   },
 ];
-
 let workCard = '';
 let workCard1 = '';
 const appendWorks = (speekerz, startt) => {
@@ -108,21 +109,18 @@ const appendWorks = (speekerz, startt) => {
     <div class="infor"><h3 class="namez">${speekerz[i].names}</h3>
     <p class="card-co">
     ${speekerz[i].company}
-    </p>
+    </p> <hr class="hrp">
     <p class="card-description">
     ${speekerz[i].description}
     </p></div> 
-  
-    </section>  `;
+      </section>  `;
   }
-  // if (window.innerWidth < 768) {
-  workCard += ' <div class="more"></div><button type="button"  class="btn buttonM" onclick="appendworksR(speekerz,5);"> <p>More &nbsp;<span class="downA">V</span></p> </button>';
-};
+  };
 appendWorks(speekerz, 0);
 projectsC.innerHTML += workCard;
 /* eslint-disable no-unused-vars */
 const appendWorksR = (speekerz, startt) => {
-  for (let i = startt; i < startt + 6; i += 1) {
+  for (let i = startt; i < startt + 11; i += 1) {
     workCard1 += ` <section class="speeker-card">
     <img class="spk-img" src="${speekerz[i].image}" alt="${speekerz[i].names}" />
     <div class="infor"><h3 class="namez">${speekerz[i].names}</h3>
@@ -135,4 +133,22 @@ const appendWorksR = (speekerz, startt) => {
       </section>`;
   }
 };
-projectsM.innerHTML += workCard1;
+LoadD.classList.toggle('hide');
+LoadB.addEventListener('click', () => {
+  appendWorksR(speekerz, 1);
+  projectsC.innerHTML = " ";
+    projectsC.innerHTML = workCard1;
+  workCard1 = " ";
+  LoadB.classList.toggle('hide');
+  LoadD.classList.remove('hide');
+});
+LoadD.addEventListener('click', () => {
+  workCard = " ";
+  appendWorks(speekerz, 0);
+  projectsC.innerHTML = " ";
+  projectsC.innerHTML = workCard;
+  workCard = " ";
+  LoadD.classList.toggle('hide');
+  LoadB.classList.remove('hide');
+});
+
