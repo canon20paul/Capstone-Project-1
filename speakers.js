@@ -1,5 +1,4 @@
 const projectsC = document.querySelector('.speakers');
-const projectsM = document.querySelector('.more');
 const LoadB = document.querySelector('.buttonM');
 const LoadD = document.querySelector('.buttonL');
 const speekerz = [
@@ -114,8 +113,7 @@ const appendWorks = (speekerz, startt) => {
     ${speekerz[i].description}
     </p></div> 
       </section>  `;
-  }
-  };
+  }};
 appendWorks(speekerz, 0);
 projectsC.innerHTML += workCard;
 /* eslint-disable no-unused-vars */
@@ -136,19 +134,18 @@ const appendWorksR = (speekerz, startt) => {
 LoadD.classList.toggle('hide');
 LoadB.addEventListener('click', () => {
   appendWorksR(speekerz, 1);
-  projectsC.innerHTML = " ";
+  projectsC.innerHTML = ' ';
     projectsC.innerHTML = workCard1;
-  workCard1 = " ";
+  workCard1 = ' ';
   LoadB.classList.toggle('hide');
   LoadD.classList.remove('hide');
 });
 LoadD.addEventListener('click', () => {
-  workCard = " ";
+  workCard = ' ';
   appendWorks(speekerz, 0);
-  projectsC.innerHTML = " ";
+  projectsC.innerHTML = ' ';
   projectsC.innerHTML = workCard;
-  workCard = " ";
+  workCard = ' ';
   LoadD.classList.toggle('hide');
   LoadB.classList.remove('hide');
 });
-
