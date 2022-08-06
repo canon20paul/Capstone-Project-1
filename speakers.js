@@ -113,7 +113,8 @@ const appendWorks = (speekerz, startt) => {
     ${speekerz[i].description}
     </p></div> 
       </section>  `;
-  }};
+  }
+};
 appendWorks(speekerz, 0);
 projectsC.innerHTML += workCard;
 /* eslint-disable no-unused-vars */
@@ -135,7 +136,7 @@ LoadD.classList.toggle('hide');
 LoadB.addEventListener('click', () => {
   appendWorksR(speekerz, 1);
   projectsC.innerHTML = ' ';
-    projectsC.innerHTML = workCard1;
+  projectsC.innerHTML = workCard1;
   workCard1 = ' ';
   LoadB.classList.toggle('hide');
   LoadD.classList.remove('hide');
