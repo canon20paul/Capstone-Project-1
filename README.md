@@ -1,62 +1,36 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Remote Devs Global summit Confrence
 
-> Description the project.
-
+> A capstone Project template for an a Global Conference
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- Javascript
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo]( https://canon20paul.github.io/Capstone-Project-1-Confrence/)
 
+## Video Demo
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+[Video Demo](https://www.loom.com/share/ba76db2139cb41589aaa105d2649ea1c)
 
 ## Authors
 
-👤 **Author1**
+👤 **Paul Malongo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@canon20paul](https://github.com/canon20paul)
+- Twitter: [@paulmalongo](https://twitter.com/paulmalongo)
+- LinkedIn: [Paulmalongo](https://linkedin.com/in/paulmalongo)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check or comment them on the [issues page](https://github.com/canon20paul/Capstone-Project-1-Confrence).
 
 ## Show your support
 
@@ -64,10 +38,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Cindy Shinon Behance for her UI design template
+- nft.nyc for using their speaker images
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [ Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
