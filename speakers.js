@@ -1,4 +1,5 @@
 const projectsC = document.querySelector('.speakers');
+const projectsM = document.querySelector('.more');
 const speekerz = [
   {
     id: 'speaker1',
@@ -112,10 +113,10 @@ const appendWorks = (speekerz, startt) => {
     ${speekerz[i].description}
     </p></div> 
   
-    </section>`;
+    </section>  `;
   }
   // if (window.innerWidth < 768) {
-  workCard += ' <button type="button"  class="btn buttonM" onclick="appendworksR(speekerz,5);"> <p>More &nbsp;<span class="downA">V</span></p> </button> ';
+  workCard += ' <div class="more"></div><button type="button"  class="btn buttonM" onclick="appendworksR(speekerz,5);"> <p>More &nbsp;<span class="downA">V</span></p> </button>';
 };
 appendWorks(speekerz, 0);
 projectsC.innerHTML += workCard;
@@ -133,6 +134,7 @@ const appendWorksR = (speekerz, startt) => {
     </p></div> 
       </section>`;
   }
-  workCard1 += ' <button type="button"  class="btn buttonM" onclick=" appendworksR(speekerz,5);"> <p>Less &nbsp;<span class="downA">V</span></p> </button> ';
+  
 };
-projectsC.innerHTML += workCard1;
+
+projectsM.innerHTML += workCard1;
