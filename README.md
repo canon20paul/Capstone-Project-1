@@ -12,11 +12,11 @@
 
 ## Live Demo
 
-[Live Demo](https:/)
+[Live Demo]( https://canon20paul.github.io/Capstone-Project-1-Confrence/)
 
 ## Video Demo
 
-[Video Demo]()
+[Video Demo](https://www.loom.com/share/ba76db2139cb41589aaa105d2649ea1c)
 
 ## Authors
 

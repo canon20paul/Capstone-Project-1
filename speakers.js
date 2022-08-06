@@ -133,8 +133,5 @@ const appendWorksR = (speekerz, startt) => {
     ${speekerz[i].description}
     </p></div> 
       </section>`;
-  }
-  
-};
-
+  }};
 projectsM.innerHTML += workCard1;
